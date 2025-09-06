@@ -6,6 +6,9 @@ import argparse
 
 from random import seed, randrange
 
+def print_hello():
+    print("Hello world")
+
 def add():
     return randrange(1000) + randrange(1000)
 
@@ -43,6 +46,8 @@ def main():
         result = subtract()
 
     logging.info(f"The result is {result}")
+
+    print_hello()
 
 if __name__ == "__main__":
     main()
